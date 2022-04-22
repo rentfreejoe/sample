@@ -145,8 +145,8 @@ export const publicSaleSettings: PublicSaleSettings = {
   // date('29 2021 00:00:00 GMT')
 
   //Title and Description
-  title: "Public Sale",
-  desc: "Sale is now live. Mint your NFT below",
+  title: "Mint Live",
+  desc: "3,333 Flavor Flamez making their way to Solana.",
 
   //Enable Custom HTML
   enableCustomHTML: false,

@@ -10,7 +10,10 @@
 body {
   color: var(--main-text-color);
   position: relative;
-  background: var(--main-background-color);
+  background-image: url("/Users/joetomlinson/solana/Templates/Flavor FE/src/img/FFBG.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--main-background-color);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -27,8 +30,8 @@ code {
 nav {
   background: var(--nav-background-color);
   width: 100%;
-  height: var(--nav-height);
-  transition: height 0.2s ease-in-out;
+  height: fit; /*var(--nav-height);*/
+  transition: height 0.8s ease-in-out;
 }
 
 .nav-container {
@@ -60,6 +63,7 @@ nav a:hover {
 }
 
 .mobile-menu-button {
+  color: transparent;
   height: 30px;
   width: 30px;
   position: fixed;
@@ -75,6 +79,7 @@ nav a:hover {
 }
 
 .mobile-nav {
+  color: transparent;
   position: fixed;
   min-height: 100vh;
   background: var(--mobile-nav-background-color, rgb(117, 69, 69));
@@ -124,6 +129,7 @@ nav a:hover {
 }
 
 .mobile-nav-logo {
+  color: transparent;
   height: var(--nav-logo-height);
 }
 
@@ -151,7 +157,7 @@ nav a:hover {
   }
 
   .nav-logo {
-    height: 50px !important;
+    height: 80px !important;
   }
 
   nav {
@@ -176,6 +182,8 @@ nav a:hover {
 }
 
 .pb-3 {
+  text-emphasis-color: white;
+  color: white;
   padding-bottom: 30px;
 }
 
@@ -258,14 +266,17 @@ header {
 
 .card {
   align-items: center;
+  justify-items: center;
   border-radius: var(--card-border-radius);
-  padding: 40px;
+  padding: auto;
   background: var(--card-background-color);
   box-shadow: var(--card-shadow);
 }
 
 .container {
-  position: relative;
+  justify-self: center;
+  align-items: center;
+  position: center;
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: auto;
@@ -274,6 +285,7 @@ header {
 }
 
 .content-wrapper {
+  position: center;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 900px;
@@ -291,11 +303,14 @@ header {
 }
 
 .minting-box {
+align-items: center;
+position: center;
   background-color: var(--minting-box-color) !important;
   color: var(--minting-box-text-color) !important;
 }
 
 .minting-box h5 {
+  align-self: center;
   color: var(--minting-box-heading-color);
 }
 
@@ -319,6 +334,10 @@ header {
 }
 
 .custom-mint-container {
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
   margin-bottom: 20px;
  }
 
